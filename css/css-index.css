@@ -230,9 +230,6 @@ button:hover{
 	font-family: 'Rosalinda';
 	
 }
-.facts-content{
-}
-
 .facts-block{
 	display: flex;
 	margin-top: 30px;
@@ -258,7 +255,6 @@ button:hover{
 }
 .facts-text p{
 	font-size: 25px;
-	color: #545454;
 	padding: 0;
 	line-height: 30px;
 }
@@ -615,7 +611,6 @@ and (orientation : landscape) {
 	}
 }
 	
-}	
 /* iPhone 6Plus (landscape) ----------- */
 @media (max-width: 736px) {
 	.courses-left{
