@@ -1,0 +1,730 @@
+
+@font-face{
+font-family: 'Rosalinda';
+src:url('../fonts/Rosalinda/Rosalinda.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/Gilroy-Regular.eot');
+	src: url('../fonts/Gilroy/Gilroy-Regular.eot?iefix') format('eot'),
+	url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+	url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype'),
+	url('../fonts/Gilroy-Regular.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+font-family: 'Gilroy';
+src: url('../fonts/Gilroy/Gilroy-ExtraBold.eot');
+src: url('../fonts/Gilroy/Gilroy-ExtraBold.eot?iefix') format('eot'),
+url('../fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff'),
+url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype'),
+url('../fonts/Gilroy-ExtraBold.svg#webfont') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+
+
+
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+body {
+	height:100%;
+	font-family: "Gilroy", "Serif";
+	font-weight: 300;
+	padding:0;
+	margin:0;
+	font-size:16px;
+	line-height: 28px;
+	color: #777; 
+	background: #fff;
+	overflow-x:hidden;
+	position: relative;
+}
+h1 { font-size: 3em; line-height:1.2em; margin:0 0 .3em; }
+h2 { font-size: 1.8em; line-height:1.4em; margin:0 0 .3em;  }
+h3 { font-size: 1.4em; line-height:1.4em; margin-top: 0;margin-bottom: 3px;font-weight: 900;}
+h4 { font-size: 1.25em; line-height:1.4em;}
+h5 { font-size: 1.1em; line-height:1.4em; }
+h6 { font-size: 1em; line-height:1.2em; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none;
+}	 
+p { 
+	padding: 0 0 4px;
+	margin:0;
+	line-height: 20px;
+}
+a {
+	color: #FFAB00;
+	font-weight: 500;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+} 
+a:hover, a:focus {
+	text-decoration: none;
+	color: #FFCA5C;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+button:active, button:focus {
+  outline: none !important;
+}
+button{
+	background-color: #FABD40;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: normal;
+	font-size: 18px;
+	border: none;
+	padding: 5px 20px;
+}
+button:hover{
+	background-color: rgb(255, 211, 123);
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+.highlight {
+	color: #3eb0f7;
+}
+#preloader { 
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	z-index: 999; 
+	width: 100%; 
+	height: 100%; 
+	overflow: visible; 
+	background: #fff url(../images/loading.gif) no-repeat center center;
+}
+.fullscreen {
+    width:100%;
+    min-height:100%;
+	background-repeat:no-repeat;
+    background-position:50% 50%;
+    background-position:50% 50%\9 !important;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.overlay2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#menu {
+	z-index: 99;
+}
+.navbar-default {
+	background:  #FCE3DC;
+}
+.navbar-default .navbar-brand {
+    padding: 7px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #535151;
+	font-weight: 400;
+	font-size: 15px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #fff;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	background: transparent;
+    color: #000000;
+}
+/* центрирование шапки */
+#navbar-scroll ul{
+	margin: 0 190px;
+	
+}
+.navbar-collapse{
+	display: flex;
+	justify-content: center;
+}
+
+/* главный экран */
+#main-ekran{
+	background: #fff;
+}
+.main-content{
+	padding-top: 70px;
+	margin-bottom: 70px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.main-photo img{
+	width: 400px;
+}
+.main-text{
+	width:600px;
+	font-size: 20px;
+	color: #000;
+	display: flex;
+	align-items: center;
+	padding: 30px 60px;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: #FDE0DA;
+	margin-bottom: 30px;
+}
+.main-title{
+	font-size: 30px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #000;
+	font-family: 'Rosalinda';
+}
+.main-subtitle{
+	margin-top: 30px;
+}
+.main-button{
+	margin-top: 30px;
+}
+.main-button a{
+	border-bottom: 1.5px solid #FFAB00;
+}
+.main-button a:hover{
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+	border-bottom: 1.5px solid #FFCA5C;
+}
+/* главный экран */
+
+
+/* факты */
+
+#facts{
+	background: #FBF8F1;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+.section-title{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+	
+}
+.section-title h2{
+	display: inline-block;
+	color: #000;
+	font-size: 40px;
+	border-bottom: 1.5px solid #000;
+	font-family: 'Rosalinda';
+	
+}
+.facts-content{
+}
+
+.facts-block{
+	display: flex;
+	margin-top: 30px;
+	margin-right: 0;
+	background-image: url(../images/facts-card.png);
+	height: 246px;
+	background-repeat: no-repeat;
+	width: 303px;
+	justify-content: center;
+	flex-direction: column;
+	box-sizing: border-box;
+
+}
+.facts-blocks{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	box-sizing: border-box;
+}
+.facts-text{
+	margin-top: 30px;
+	text-align: center;
+}
+.facts-text p{
+	font-size: 25px;
+	color: #545454;
+	padding: 0;
+	line-height: 30px;
+}
+
+/* факты */
+
+/* слайдер бесплатные материалы */
+#free-mat{
+	/* background-color: #FBF8F1; */
+	/* background-image: url(../images/bg-free.png); */
+	background-color: #DFF4F4;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 100px;
+}
+.free-right{
+	padding-top: 30px;
+	text-align: center;
+}
+.free-left{
+	text-align: center;
+}
+.free-description{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.free-description p{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0;
+}
+.slick-dots li button:before {
+	font-family: 'slick';
+	 font-size: 15px;
+	 line-height: 20px;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 20px;
+	 height: 20px;
+	 content: '•'; /* <-- Вот этот символ */
+	 text-align: center;
+	 opacity: .25;
+	 color: black;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+   }
+.slider-block{
+	outline: none;
+}
+.slider-content{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.free-img img{
+	height: 400px;
+	z-index: 10;
+}
+.free-img{
+	background: rgba(253, 224, 218, 0.65);
+	z-index: 20;
+}
+.slick-active{
+	outline: none;
+}
+.slick-current{
+	outline: none;
+}
+.slick-prev, .slick-next{
+	
+	width: 40px;
+	height: 40px;
+}
+.slick-prev{
+	left: -45px;
+	display: none;
+}
+/* сделай адаптив left top */
+.slick-next{
+	right: -45px;
+	display: none;
+}
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+	opacity: 1;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: none;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: 1;
+}
+
+/* слайдер бесплатные материалы  */
+
+/* радужный текст */
+
+.raduga{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.raduga p{
+	margin: 0; /* Убираем отступы */
+    background: white; /* Белый цвет фона */
+	mix-blend-mode: screen; /* Режим наложения */
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/* конец радужный текст  */
+
+
+ /* курсы  */
+ #courses{
+	 color: #000;
+	 
+background: linear-gradient(145.62deg, #FDE0DA 50.25%, #FFFFFF 50.26%);
+ }
+.courses-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 150px;
+}
+.courses-left{
+	text-align: center;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.courses-right{
+	text-align: center;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.courses-description{
+	text-align: left;
+	width: 90%;
+}
+.courses-description p{
+	font-size: 23px;
+}
+.courses-description-title{
+	font-weight: bold;
+	font-size: 25px;
+}
+.courses-price{
+	font-weight: bold;
+	font-size: 30px;
+	margin-right: 10px;
+}
+.courses-photo img{
+	height: 400px;
+}
+.tsitata{
+	font-size: 20px;
+}
+ .courses-photo{
+	margin-top: 30px;
+}
+.cources-tsitata{
+	font-weight: bold;
+	font-size: 20px;
+}
+.course-button-price{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.oplata{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	display: none;
+}
+ /* конец курсы  */
+
+
+ /* отзывы */
+.oziv img{
+	box-sizing: border-box;
+}
+
+.otzivi-slider img{
+	width: 200px;
+	transition: all 300ms linear 0ms;
+}
+.otzivi-slider img:hover{
+		transform: rotate(0deg) scale(1.4,1.4);
+		z-index: 999;
+		transition: transform 400ms linear 0ms, 
+	 box-shadow 400ms linear 0ms, z-index 400ms linear 0ms;
+
+}
+.otziv-item{
+	width: 200px;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.otziv-item{
+	outline: none;
+}
+.otziv-item p{
+	margin-top: 20px;
+}
+/* акции  */
+#sale{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.sale-content{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #000;
+	flex-wrap: wrap;
+}
+.sale-content p{
+	font-size: 70px;
+	font-weight: bold;
+}
+.sale-title p{
+	font-size: 15px;
+}
+.sale-title{
+	margin-bottom: 10px;
+}
+.sale-2, .sale-1, .sale-3{
+	text-align: center;
+}
+.sale-content img{
+	width: 250px;
+}
+.sale-price p{
+	font-weight: bold;
+	font-size: 50px;
+	color: rgb(255, 0, 0);
+}
+.sale-button{
+	margin-top: 20px;
+}
+.sale-plus, .sale-ravno{
+	width: 100px;
+	display: flex;
+	justify-content: center;
+}
+.sale-description{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+.sale-description p{
+	font-size: 15px;
+	font-weight: normal;
+}
+.sale-title-price p{
+	font-size: 20px;
+	font-weight: bold;
+	color: #000
+}
+.sale-plus, .sale-ravno, .sale-3{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.sale-3{
+	padding-top: 0;
+}
+ /* конец акции  */
+
+ /* конец отзывы  */
+@media (min-width : 1024px) 
+and (max-width : 1200px){
+	.main-text {
+		width: 40vw;
+		margin-bottom: 30px;
+	}
+	.courses-left{
+		width: 50%;
+	}
+	.courses-right{
+		width: 50%;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait) {
+	.courses-left{
+		width: 70%;
+	}
+	.courses-right{
+		margin-top: 40px;
+		width: 40%;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : landscape) {
+	.courses-left{
+		width: 70%;
+	}
+	.courses-right{
+		margin-top: 40px;
+		width: 40%;
+	}
+}
+
+/* smart-phone ----------- */
+@media (max-width: 767px) {
+	.main-text {
+		width: 80vw;
+		background-color: transparent;
+		margin-bottom: 30px;
+		padding: 0;
+	}
+	.section-title h2{
+		display: inline-block;
+		color: #000;
+		font-size: 40px;
+		border-bottom: none;
+		font-family: 'Rosalinda';
+	}
+	.courses-left{
+		width: 70%;
+	}
+	.courses-right{
+		margin-top: 40px;
+		width: 80%;
+	}
+}
+	
+}	
+/* iPhone 6Plus (landscape) ----------- */
+@media (max-width: 736px) {
+	.courses-left{
+		width: 70%;
+	}
+	.courses-right{
+		margin-top: 40px;
+		width: 80%;
+	}
+}
+
+/* iPhone 6 (landscape) ----------- */
+@media (max-width: 667px) {
+	
+}
+
+/* iPhone 5 (landscape) ----------- */
+@media (max-width: 568px){
+	.main-text {
+		width: 90vw;
+		background-color: transparent;
+		margin-bottom: 30px;
+		padding: 0;
+	}
+}
+
+/* iPhone 4 (landscape) ----------- */
+@media (max-width: 480px) {
+	.courses-photo img{
+		height: 300px;
+	}
+}
+
+/* smart phone width: 360px ----------- */
+@media (max-width: 360px) {
+	.main-text {
+		width: 90vw;
+		background-color: transparent;
+		margin-bottom: 30px;
+		padding: 0;
+	}
+	
+}
+@media (max-width: 400px){
+	.free-img img{
+		height:  300px;
+	}
+}
+/* iPhone 4/5 (portrait) ----------- */
+@media (max-width: 320px) {
+	.main-text {
+		width: 90vw;
+		background-color: transparent;
+		margin-bottom: 30px;
+		padding: 0;
+	}
+	.container{
+		padding: 0;
+	}
+	
+}
+@media screen and (max-width: 1200px) {
+	#navbar-scroll ul{
+		margin: 0 !important;
+		
+	}
+	.main-text {
+		width: 70vw;
+		background-color: transparent;
+	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+		text-align: center;
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .logo-phone-navbar-number{
+    	display: inline-block !important;
+    }
+}
+@media screen and (max-width: 992px) {
+	.sale-1, .sale-2,.sale-3,.sale-plus,.sale-ravno{
+		width: 90%;
+	}
+}
