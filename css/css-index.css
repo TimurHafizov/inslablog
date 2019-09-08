@@ -129,7 +129,7 @@ button:hover{
 	z-index: 99;
 }
 .navbar-default {
-	background:  #FCE3DC;
+	background:  #FDE0DA;
 }
 .navbar-default .navbar-brand {
     padding: 7px;
@@ -256,6 +256,7 @@ button:hover{
 .facts-text p{
 	font-size: 25px;
 	padding: 0;
+	color: #000;
 	line-height: 30px;
 }
 
@@ -285,6 +286,7 @@ button:hover{
 	font-size: 20px;
 	font-weight: bold;
 	padding: 0;
+	color: #000;
 }
 .slick-dots li button:before {
 	font-family: 'slick';
@@ -314,6 +316,7 @@ button:hover{
 .free-img img{
 	height: 400px;
 	z-index: 10;
+	border: 10px solid white;
 }
 .free-img{
 	background: rgba(253, 224, 218, 0.65);
